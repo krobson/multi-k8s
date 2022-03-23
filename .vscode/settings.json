@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "https://json.schemastore.org/travis.json": "file:///home/ken/Projects/Docker%20%26%20Kubernetes/complex/.travis.yaml"
+    }
+}
