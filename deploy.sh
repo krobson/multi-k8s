@@ -1,3 +1,4 @@
+set -xv
 docker build -t krobson/multi-client:latest -t krobson/multi-client:${GIT_SHA} -f ./client/Dockerfile ./client
 docker build -t krobson/multi-server:latest -t krobson/multi-server:${GIT_SHA} -f ./server/Dockerfile ./server
 docker build -t krobson/multi-worker:latest -t krobson/multi-worker:${GIT_SHA} -f ./worker/DOckerfile ./worker
