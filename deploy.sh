@@ -12,6 +12,6 @@ docker push krobson/multi-worker:${GIT_SHA}
 
 kubectl apply -f k8s
 
-kubectl set image deployments/client-deployment multi-client=krobson/multi-client:${GIT_SHA}
-kubectl set image deployments/server-deployment multi-server=krobson/multi-server:${GIT_SHA}
-kubectl set image deployments/worker-deployment multi-worker=krobson/multi-worker:${GIT_SHA}
+kubectl set image deployments/client-deployment client=krobson/multi-client:${GIT_SHA}
+kubectl set image deployments/server-deployment server=krobson/multi-server:${GIT_SHA}
+kubectl set image deployments/worker-deployment worker=krobson/multi-worker:${GIT_SHA}
