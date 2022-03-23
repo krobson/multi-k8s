@@ -1,7 +1,7 @@
 set -xv
 docker build -t thesleepingbarber/multi-client:latest -t thesleepingbarber/multi-client:${GIT_SHA} -f ./client/Dockerfile ./client
 docker build -t thesleepingbarber/multi-server:latest -t thesleepingbarber/multi-server:${GIT_SHA} -f ./server/Dockerfile ./server
-docker build -t thesleepingbarber/multi-worker:latest -t thesleepingbarber/multi-worker:${GIT_SHA} -f ./worker/DOckerfile ./worker
+docker build -t thesleepingbarber/multi-worker:latest -t thesleepingbarber/multi-worker:${GIT_SHA} -f ./worker/Dockerfile ./worker
 
 docker push thesleepingbarber/multi-client:latest
 docker push thesleepingbarber/multi-server:latest
