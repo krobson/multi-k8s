@@ -1,3 +1,5 @@
+#!/bin/bash
+
 set -xv
 docker build -t thesleepingbarber/multi-client:latest -t thesleepingbarber/multi-client:${GIT_SHA} -f ./client/Dockerfile ./client
 docker build -t thesleepingbarber/multi-server:latest -t thesleepingbarber/multi-server:${GIT_SHA} -f ./server/Dockerfile ./server
